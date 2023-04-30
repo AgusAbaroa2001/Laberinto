@@ -5,11 +5,38 @@ import java.util.Random;
 import javax.swing.JPanel;
 import javax.swing.*;
 
+
 public class Juego extends JPanel{
 
     Laberinto laberinto = new Laberinto();
     Personaje personaje = new Personaje();
 
+    public Juego(){
+        addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                personaje.keypersonaje(e);
+
+
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        });
+
+        setFocusable(true);
+    }
+
+    @Override
     public void paint(Graphics g){
 
           laberinto.paint(g);
@@ -17,6 +44,7 @@ public class Juego extends JPanel{
     }
     public static void main(String[] args){
         JFrame vtn = new JFrame("Laberinto");
+
         Juego juego = new Juego();
         vtn.add(juego);
         vtn.setSize(1920,1440);
@@ -25,7 +53,20 @@ public class Juego extends JPanel{
 
 
 
+
+
         vtn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        while(true){
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+
+            vtn.repaint();
+        }
 
     }
 }
