@@ -8,8 +8,10 @@ import javax.swing.*;
 
 public class Juego extends JPanel{
 
+
     Laberinto laberinto = new Laberinto();
     Personaje personaje = new Personaje();
+
 
     public Juego(){
         addKeyListener(new KeyListener() {
@@ -36,6 +38,7 @@ public class Juego extends JPanel{
         setFocusable(true);
     }
 
+
     @Override
     public void paint(Graphics g){
 
@@ -50,8 +53,7 @@ public class Juego extends JPanel{
         vtn.setSize(1920,1440);
         vtn.setLocation(0,0);
         vtn.setVisible(true);
-
-
+        vtn.setBackground(Color.black);
 
 
 

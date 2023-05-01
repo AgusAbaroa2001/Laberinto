@@ -3,12 +3,12 @@ import java.awt.event.KeyEvent;
 
 public class Personaje {
 
-    private int x=20, y=20;
+    private int x=0, y=0;
     private int xActual = x, yActual = y;
     private final int movimiento=10;
     public void paint(Graphics g){
-        g.setColor(Color.black);
-        g.fillRect(x,y,30,30);
+        g.setColor(Color.red);
+        g.fillRect(x,y,20,20);
 
     }
 
