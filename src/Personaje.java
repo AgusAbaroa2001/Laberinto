@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 
 public class Personaje {
 
-    private int x=10, y=32;
+    private int x=10, y=41;
 
 
     private  long tiempoInicial = System.currentTimeMillis();
@@ -48,11 +48,12 @@ public class Personaje {
                 long tiempoFinal = System.currentTimeMillis();
                 long tiempoTotal = (tiempoFinal - tiempoInicial) / 1000;
                 JOptionPane.showMessageDialog(null,"LLEGASTE A LA META\nTiempo total: " + tiempoTotal + " segundos");
+                tiempo.restart();
                 x=10;
-                y=32;
+                y=41;
             } else{
                 x=10;
-                y=32;
+                y=41;
             }
         }
 
@@ -66,11 +67,12 @@ public class Personaje {
                 long tiempoFinal = System.currentTimeMillis();
                 long tiempoTotal = (tiempoFinal - tiempoInicial) / 1000;
                 JOptionPane.showMessageDialog(null,"LLEGASTE A LA META\nTiempo total: " + tiempoTotal + " segundos");
+                tiempo.restart();
                 x=10;
-                y=32;
+                y=41;
             }else{
                 x=10;
-                y=32;
+                y=41;
             }
         }
 
@@ -83,11 +85,12 @@ public class Personaje {
                 long tiempoFinal = System.currentTimeMillis();
                 long tiempoTotal = (tiempoFinal - tiempoInicial) / 1000;
                 JOptionPane.showMessageDialog(null,"LLEGASTE A LA META\nTiempo total: " + tiempoTotal + " segundos");
+                tiempo.restart();
                 x=10;
-                y=32;
+                y=41;
             }else{
                 x=10;
-                y=32;
+                y=41;
             }
         }
 
@@ -100,11 +103,12 @@ public class Personaje {
                 long tiempoFinal = System.currentTimeMillis();
                 long tiempoTotal = (tiempoFinal - tiempoInicial) / 1000;
                 JOptionPane.showMessageDialog(null,"LLEGASTE A LA META\nTiempo total: " + tiempoTotal + " segundos");
+                tiempo.restart();
                 x=10;
-                y=32;
+                y=41;
             }else{
                 x=10;
-                y=32;
+                y=41;
             }
         }
     }
