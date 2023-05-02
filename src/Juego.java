@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.Random;
 import javax.swing.JPanel;
 import javax.swing.*;
@@ -54,6 +56,34 @@ public class Juego extends JPanel{
         vtn.setLocation(0,0);
         vtn.setVisible(true);
         vtn.setBackground(Color.black);
+
+        vtn.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                System.out.println(e.getPoint());
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
 
 
 
